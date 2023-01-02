@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+:root{ 
+    --blue: #3498db;
+    --dark-blue:#349;
+    --red:#c029;
+    --dark-red:#c0392b;
+    --black:#333;
+    --white:#fff;
+    --light-bg:#eee;
+    --box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'poppins',sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    text-decoration: none;  
+   
+}
+body{
+    
+}
+
+*::-webkit-scrollbar{
+    width: 10px;
+}
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: var(--blue);
+}
+.button{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: var(--white);
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: var(--blue);
+    margin-top: 5px;
+}
+
+.button:hover{
+    background-color: var(--dark-blue);
+}
+.delete-button{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: var(--white);
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: var(--red);
+ }
+.delete-button:hover{
+     background-color: var(--dark-red);
+ }
+.form-container{
+    min-height: 100vh;
+    background-color:#b5d7ee9c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.form-container form{
+    padding: 20px;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    width: 500px;
+}
+.form-container form h3{
+    margin-bottom: 10px;
+    font-size: 30px;
+    color:var(--black);
+    text-transform:uppercase;
+}
+.form-container form .box{
+    width: 100%;
+    border-radius: 5px;
+    padding: 12px 14px;
+    font-size: 18px;
+    color: var(--black);
+    margin: 10px 0;
+    background-color: var(--light-bg);
+}
+.form-container form p{
+    margin-top: 20px;
+    font-size: 20px;
+    color:var(--black)
+}
+.form-container form p a{
+    color: var(--red);
+}
+.form-container form p a:hover{
+    text-decoration: underline;
+}
+.message{
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 20px;
+}
+.container{
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.container .profile{
+    padding: 20px;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    width: 500px;
+}
+.container .profile img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+.container .profile p{
+    margin-top: 20px;
+    color: var(--black);
+    font-size: 20px;
+}
+.container .profile p a{
+    color: var(--red);
+
+}
+.container .profile p a:hover{
+    text-decoration: underline;
+}
+.update-profile{
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.update-profile form{
+    padding: 20px;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    border-radius: 5px;
+    width: 700px;
+}
+.update-profile form img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+.update-profile form .canva{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+.update-profile form .canva .inputcanva{
+    width: 50%;
+}
+.update-profile form .canva .inputcanva span{
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+    font-size: 17px;
+    color:var(--black);
+}
+.update-profile form .canva .inputcanva .box{
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--light-bg);
+    padding: 12px 14px;
+    font-size: 17px;
+    color: var(--black);
+    margin-top: 10px;
+}
+.navebare{
+    background-image: url(ciel.jpg);
+    background-size: cover;
+    height: 150px;
+    box-shadow: var(--box-shadow);
+    padding: 5px;
+    margin-top: 20px;
+    border-bottom: solid rgba(139, 138, 138, 0.719);
+}
+.navetitle{
+    text-align: center;
+    margin-top: 10px;
+    font-size: xx-large;
+    font-family: 'Fugaz One', cursive;
+    color: var(--dark-blue);
+    
+}
+.navecontent{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.navebox{
+    color:black;
+    border-radius: 5px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.navebox:hover{
+    color: var(--dark-blue);
+    text-decoration: underline;
+
+}
+.footerbare{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    height: 300px;
+    padding: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    border-top: solid rgba(139, 138, 138, 0.719);
+    
+    
+}
+.footercontent {
+    margin-top: 40px;
+    justify-content: space-around;
+    
+
+}
+.footerbox{
+    color: var(--black);
+   
+    
+}
+.footerbox:hover{
+    color: var(--dark-blue);
+    text-decoration: underline;
+}
+.footercontent h3 {
+    border: solid #c0392b;
+    color: var(--white);
+}
+.footercontent h3:hover{
+    border: solid grey;
+    background-color: grey;
+}
+.principale{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    background-color:#b5d7ee9c;
+    
+   
+}
+aside{
+    width: 30%;
+    height: 600px;
+    text-align:center;
+    font-size:large;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(235, 228, 228, 0.281);
+    border-bottom: solid rgba(139, 138, 138, 0.719);
+    box-shadow: var(--box-shadow);
+    line-height:45px;
+   
+}
+article{
+    text-align: center;
+    width: 60%;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: solid rgba(139, 138, 138, 0.719);
+    box-shadow: var(--box-shadow);
+    font-size: large;
+    font-weight: bold;
+    line-height:50px;
+    
+}
+.cita{
+    background-color: rgba(235, 228, 228, 0.281);
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    
+}
+.cita:hover{
+    opacity: 5;
+}
+.register{
+    width: 60%;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: var(--white);
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: var(--blue);
+    margin-top: 20px;
+    margin-left: 25%;
+}
+.register:hover{
+    background-color: var(--dark-blue);
+    transition-duration: 1;
+}
+.register a{
+    color: var(--white);
+    
+}
+@media(max-width:650px) {
+    .update-profile form .flex{
+        flex-wrap: wrap;
+        gap: 0;
+
+    }
+    .update-profile form .flex .inputcanva{
+        width: 100%;
+    }
+}
