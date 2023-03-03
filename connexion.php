@@ -10,18 +10,12 @@
       $select = mysqli_query($conn, "SELECT * FROM `utilisateurs` WHERE login = '$login' AND password = '$password'") or die('requette échouée');
         if(mysqli_num_rows($select) > 0){
            $row = mysqli_fetch_assoc($select);
-            //$_SESSION['login'] = $login ;
            $_SESSION['login'] = $row['id'];
            header('location:session.php');
         }else{
             $message[] = 'Identifiant ou mot de passe incorrecte';
         }
-
-
-
-
      }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
