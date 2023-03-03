@@ -6,6 +6,7 @@
       $login = mysqli_real_escape_string($conn, $_POST['login']);
       $password = mysqli_real_escape_string($conn, md5($_POST['password']));
       $cpassword = mysqli_real_escape_string($conn, md5($_POST['cpassword']));
+      $message[] = '';
       $select = mysqli_query($conn, "SELECT * FROM `utilisateurs` WHERE login = '$login' AND password = '$password'") or die('requette échouée');
         if(mysqli_num_rows($select) > 0){
            $message[] = 'Utilisateur déja existant';
@@ -13,7 +14,7 @@
           if($password != $cpassword){
             $message[] = 'mots de passe non identiques';
           }else{
-            $insert = mysqli_query($conn, "INSERT INTO `utilisateurs`(prenom, nom, login, password,) VALUES('$nom', '$prenom', '$login', '$password')")
+            $insert = mysqli_query($conn, "INSERT INTO `utilisateurs`(login, password, nom, prenom) VALUES('$login', '$password', '$nom', '$prenom')")
              or die('requette échouée');
             if($insert){
               header('location:connexion.php');
